@@ -1,0 +1,105 @@
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#header {
+    flex: 0 0 10%;
+    background-color: #f8f9fa;
+}
+
+#sidebar {
+    flex: 0 0 5%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main {
+    flex: 1;
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+
+#prefooter {
+    flex: 0 0 5%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+}
+
+.sidebar,
+.sidebar-doctor,
+.sidebar-paciente,
+.sidebar-receta {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.sidebar-doctor a,
+.sidebar-paciente a,
+.sidebar-receta a {
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.sidebar a:hover,
+.sidebar-doctor a:hover,
+.sidebar-paciente a:hover,
+.sidebar-receta a:hover {
+    background-color: #e9ecef;
+}
+
+.header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .left-section {
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.btn-sidebar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.btn-sidebar:hover {
+    background-color: #a5aaae;
+}
+
+.btn-sidebar.active {
+    background-color: #a2bcd6;
+}

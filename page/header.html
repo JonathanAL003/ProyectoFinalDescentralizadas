@@ -1,0 +1,37 @@
+<div class="header">
+    <div class="left-section">
+        <span id="page-info">Página Principal</span>
+    </div>
+    <div class="center-section">
+        <a href="index.html">
+            <span>Home</span>
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="#" onclick="loadPageContent('doctores', event)">
+            <span>Doctor</span>
+            <i class="fas fa-user-md"></i>
+        </a>
+        <a href="#" onclick="loadPageContent('pacientes', event)">
+            <span>Paciente</span>
+            <i class="fas fa-user"></i>
+        </a>
+        <a href="#" onclick="loadPageContent('recetas', event)">
+            <span>Recetas</span>
+            <i class="fas fa-prescription-bottle-alt"></i>
+        </a>
+    </div>
+    <div class="right-section">
+        <span>Bienvenido Administrador</span>
+        <div id="current-time"></div>
+    </div>
+</div>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header-placeholder').innerHTML = html;
+            if (typeof startClock === 'function') {
+                startClock();
+            }
+        });
+</script>

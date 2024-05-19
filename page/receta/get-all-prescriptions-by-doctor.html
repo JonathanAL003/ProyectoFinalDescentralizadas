@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <h1>Consultar Prescripciones por Doctor</h1>
+    <form id="search-prescriptions-form">
+        <button type="button" class="btn btn-secondary mb-3" onclick="loadDoctorIds()">Cargar IDs de Doctor</button>
+        <div class="form-group">
+            <label for="doctorId">ID del Doctor</label>
+            <select class="form-control" id="doctorId"></select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="fetchPrescriptionsByDoctorId(document.getElementById('doctorId').value)">Buscar por Doctor</button>
+    </form>
+
+    <table class="table table-striped mt-4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Doctor</th>
+                <th>Paciente</th>
+                <th>Medicaciones</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="prescriptions-table-body"></tbody>
+    </table>
+</div>

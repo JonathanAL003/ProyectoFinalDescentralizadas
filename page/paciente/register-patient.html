@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <h1>Registrar Paciente</h1>
+    <form id="register-patient-form">
+        <div class="form-group">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Ingrese el nombre">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Ingrese el apellido">
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Teléfono</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder="Ingrese el teléfono">
+        </div>
+        <div class="form-group">
+            <label for="age">Edad</label>
+            <input type="number" class="form-control" id="age" placeholder="Ingrese la edad">
+        </div>
+        <div class="form-group">
+            <label for="sex">Sexo</label>
+            <select class="form-control" id="sex">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="allergies">Alergias</label>
+            <input type="text" class="form-control" id="allergies" placeholder="Ingrese las alergias">
+        </div>
+        <div class="form-group">
+            <label for="height">Altura (cm)</label>
+            <input type="number" class="form-control" id="height" placeholder="Ingrese la altura en cm">
+        </div>
+        <div class="form-group">
+            <label for="weight">Peso (kg)</label>
+            <input type="number" class="form-control" id="weight" placeholder="Ingrese el peso en kg">
+        </div>
+        <div class="form-group">
+            <label for="bloodType">Tipo de Sangre</label>
+            <select class="form-control" id="bloodType">
+                <option value="O+">O+</option>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="O-">O-</option>
+                <option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="B-">B-</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>        
+        <button type="button" class="btn btn-primary" onclick="registerPatient()">Registrar</button>
+    </form>
+</div>

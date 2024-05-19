@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <h1>Registrar Prescripción</h1>
+    <form id="register-prescription-form">
+        <button type="button" class="btn btn-secondary mb-3" onclick="loadDoctorIds(); loadPatientIds();">Cargar IDs de Doctor y Paciente</button>
+        <div class="form-group">
+            <label for="doctorId">ID del Doctor</label>
+            <select class="form-control" id="doctorId"></select>
+        </div>
+        <div class="form-group">
+            <label for="patientId">ID del Paciente</label>
+            <select class="form-control" id="patientId"></select>
+        </div>
+        <div class="form-group">
+            <label for="medications">Medicaciones</label>
+            <input type="text" class="form-control" id="medications" placeholder="Ingrese las medicaciones">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="registerPrescription()">Registrar</button>
+    </form>
+</div>
